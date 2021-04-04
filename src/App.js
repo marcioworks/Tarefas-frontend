@@ -1,11 +1,17 @@
-import logo from './logo.svg';
-import './App.css';
+import Header from './components/Header'
+import {Router} from 'react-router-dom'
+import 'bootstrap/dist/css/bootstrap.min.css';
+import history from './services/history'
+import Routes from './routes'
+import GlobalStyle from './styles/global';
 
 function App() {
   return (
-    <div className="App">
-      <h1>Urbis</h1>
-    </div>
+    <Router history={history}>
+      <Header />
+      <Routes />
+      <GlobalStyle/>
+    </Router>
   );
 }
 
