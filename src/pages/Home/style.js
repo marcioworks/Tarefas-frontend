@@ -2,8 +2,15 @@ import styled from 'styled-components'
 
 export const Container = styled.div`
   display: flex;
-  justify-content: center;
-  align-items: center;
+  flex-direction:column;
+  justify-content:space-between;
   height: 100vh;
-  background-color: #6666;
+  padding-top:65px;
+
+`;
+
+export const Rodape = styled.div`
+  height:50px;
+  background-color:#eee;
+
 `;

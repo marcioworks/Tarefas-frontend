@@ -1,15 +1,20 @@
 import React, { Component } from 'react'
-import { Container } from './style'
-import FlatList from 'flatlist-react'
+import DateTimePicker from 'react-datepicker'
+import { Container, Rodape } from './style'
+import 'moment/locale/pt-br'
+import TodoList from '../../components/TodoList'
+
+
 
 
 class Home extends Component {
-
   render() {
     return (
       <Container>
-       <h1>Lista</h1>
+        <TodoList />
+        {/* <Rodape className="fixed-bottom"/> */}
       </Container>
+
     )
   }
 }
